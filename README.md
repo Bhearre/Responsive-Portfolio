@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Responsive version of the original portfolio with media queries
+# Bhearre.github.io
+Homework 1 repository for Bootcamp
