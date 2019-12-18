@@ -2,21 +2,22 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #F2F2F2;
+    background: #f4f9fa;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 150%;
     color: #777777;
 }
 
 h1 {
-    color: #4aaaa5;
+    color: #07575b;
     font-size: 20px;
     border-bottom: 1px solid lightgrey;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 10px;
 }
 
@@ -27,18 +28,18 @@ header {
 }
 
 .navbar {
-    width: 960px;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient( 259deg, #66a5ad, #003b46);
 }
 
 #logo {
     height: 100%;
     padding: 20px;
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: 20px;
-    background: #4aaaa5;
+    font-size: 30px;
     color: white;
     float: left;
 }
@@ -48,7 +49,7 @@ nav ul {
     padding: 30px 30px 0 0;
     list-style: none;
     float: right;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 16px;
 }
@@ -59,14 +60,14 @@ nav li {
 }
 
 nav a {
-    color: #666666;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px;
 }
 
 a:hover {
-    color: orange;
+    color: lightgray;
 }
 
 .navbar::after {
@@ -78,22 +79,28 @@ a:hover {
 /* content */
 .container1 {
     background: white;
-    width: 960px;
+    width: 85%;
     border: 1px solid lightgrey;
     margin: 20px auto;
+    border-radius: 8px;
 }
 
 .container2 {
-    width: 900px;
-    padding: 20px 15px 40px 30px;
+    width: 85%;
+    padding: 20px 0 20px 0;
+    margin: auto;
 }
 
 img {
     margin: 0 20px 20px 0;
     padding: 10px 10px 0px 0;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: auto;
     float: left;
+}
+
+hr {
+    background-color: #07575b ;
 }
 
 /* Contact page */
@@ -102,7 +109,7 @@ form {
 }
 
 label {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #777777;
 }
 
@@ -110,13 +117,18 @@ input {
     height: 35px;
     border: 1px solid lightgrey;
     margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+b {
+    font-size: 14px;
 }
 
 input[type="text"] {
     width: 80%;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    padding: 5px;
+    padding: 0 5px;
  }
 
 textarea {
@@ -124,15 +136,16 @@ textarea {
     height: 100px;
     padding: 5px;
     border: 1px solid lightgrey;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     resize: none;
+    border-radius: 6px;
 }
 
 button {
-    background: #4aaaa5;
+    background: #003b46;
     color: white;
-    border: none;
+    border-color: #003b46;
     border-radius: 3px;
     cursor: pointer;
     padding: 5px 20px 5px 20px;
@@ -140,9 +153,10 @@ button {
 }
 
 button:hover {
-    background: orange;
+    background: white;
+    color: #003b46;
+    border-color: #003b46;
 }
-
 
 /* Portfolio page*/
 .image2 {
@@ -156,67 +170,58 @@ button:hover {
     height: 200px;
     position: relative;
     display: inline-block;
-    margin: 20px;
-}
-
-.thumbnail {
-    padding: 0 0 10px 0;
-    margin: 0px;
-    font-family: sans-serif;
-    font-weight: 200;
-    font-size: 24px;
-    background: #4aaaa5;
-    color: white;
-    float: left;
+    margin: 0 35px 10px 10px;
 }
 
 .banner {
-    padding: 10px 0 0 0;
-    margin: 150px 0 0 0;
-    font-family: sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    background: #4aaaa5;
+    padding: 5px 0;
+    margin-top: 180px;
+    font-size: 14px;
+    background: #07575b;
     color: white;
     position: absolute;
     width: 200px;
-    height: 30px;
+    height: 20px;
     text-align: center;
 }
 
 footer {
-    padding: 20px 20px 20px 20px;
-    background: #666666;
-    border-top: 6px solid #4aaaa5;
+    padding: 10px 0 10px 0;
+    background: linear-gradient( 259deg, #07575b, #003b46);
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 980px) {
-
-   
-
+    .container1 {
+        width: 760px;
+    }
+    .container2 {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container1, .navbar {
-        width: 700px;
+    .container1 {
+        width: 600px;
     }
     .container2 {
-        width: 650px;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .container1, .navbar {
-        width: 600px;
+    .container1 {
+        width: 400px;
     }
     .container2 {
-        width: 550px;
+        width: 80%;
     }
     #logo {
         float: none;
@@ -231,6 +236,7 @@ footer {
         position: static;
     }
 }
-@media screen and (max-width: 320px) {
 
-}
+
+
+    
